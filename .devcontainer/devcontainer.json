@@ -1,0 +1,13 @@
+{
+  "name": "PHP Dev Container",
+  "dockerFile": "Dockerfile",
+  "forwardPorts": [80],
+  "postCreateCommand": "composer install && npm install",
+  "extensions": ["felixfbecker.php-intellisense"],
+  "env": {
+    "DB_HOST": "localhost",
+    "DB_USER": "root",
+    "DB_PASSWORD": "password",
+    "DB_NAME": "mydatabase"
+  }
+}
